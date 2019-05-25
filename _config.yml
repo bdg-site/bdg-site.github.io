@@ -1,0 +1,13 @@
+title: Brown Development Group
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Brown Development Group has been building fine custom homes around
+  Colorado's Front Range since 1994. We specialize in Boulder, as well as the
+  Hilltop and Crestmoor neighborhoods in Denver.
+
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://browngroup.co" # the base hostname & protocol for your site
+
+github_username:  blocknroll
+
+markdown: kramdown
