@@ -10,4 +10,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 github_username:  blocknroll
 
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
 markdown: kramdown

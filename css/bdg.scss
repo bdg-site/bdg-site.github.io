@@ -1,0 +1,690 @@
+
+/*  FONTS   ===========================================================   */
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a, footer  {
+  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+}
+
+
+
+h1  {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 2.0em;
+  font-weight: 300;
+  letter-spacing: 0.0em;
+  color: rgba(78, 51, 38, 0.5);
+  padding: 20px 40px 30px 40px;
+  margin: 0px auto 0px auto;
+}
+
+
+p     {
+  color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  BODY  ===========================================================   */
+
+body    {
+  background-color: rgba(255, 255, 255, 1);
+  margin: 0px 0px 0px 0px;
+  line-height: 1.2;
+  text-align: center;
+  -webkit-text-size-adjust:100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*  NAVBAR  ===========================================================   */
+
+.navbar-header img  {
+  height: 50px;
+  padding: 7px 0px 6px 20px;
+}
+
+.navbar-default {
+  background-color: rgba(171, 152, 141, 1);
+  border-color: rgba(171, 152, 141, 1);
+}
+
+nav {
+  text-align: center;
+  // width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  // padding: .6em 0 1.3em 0;
+}
+
+nav a:link {
+  color: rgba(0, 0, 0, .4);
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  // width: 33.333%;    //190526
+  // font-size: 1.1em;  //190526
+  // float: left;       //190526
+  text-decoration: none;
+ }
+
+nav a:hover {
+  color: rgba(224, 84, 32, 1);
+}
+
+nav a:visited {
+  color: rgba(0, 0, 0, .4);
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: rgba(255, 255, 255, .7);
+  background-color: transparent;
+}
+
+.navbar-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 4px;
+  float: right;
+  margin-bottom: 8px;
+  margin-right: 15px;
+  margin-top: 8px;
+  padding: 9px 10px;
+  position: relative;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.navbar-default .navbar-toggle {
+  border-color: rgba(0, 0, 0, .2)
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: rgba(0, 0, 0, .2);
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.navSpacer  {
+  height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  BUTTONS   ===========================================================   */
+
+.button {
+  margin: 10px 0 10px 0;
+}
+
+.button a:link  {
+  background-color: rgba(0, 0, 0, .2);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 1px 10px 3px 10px;
+}
+
+.button a:hover {
+  background-color: rgba(224, 84, 32, 1);
+}
+
+.button a:visited {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CAROUSEL  ==================================================================== */
+
+/* Carousel base class */
+.carousel {
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  /*height: 500px;*/
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.carousel-inner > .item > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  bottom: 10px;
+  margin-bottom: 0px;
+  left: 50%;
+  list-style: none outside none;
+  margin-left: -30%;
+  padding-left: 0;
+  position: absolute;
+  text-align: center;
+  width: 60%;
+  z-index: 15;
+}
+
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, .3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  width: 10px;
+}
+
+.carousel-indicators .active {
+    background-color: rgba(255, 255, 255, .7);
+    height: 12px;
+    margin: 0;
+    width: 12px;
+}
+
+.carousel-control {
+    bottom: 0;
+    color: rgba(255, 255, 255, .7);
+    font-size: 20px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: 10%;
+}
+
+.carousel-control.left {
+  background-image: none;
+  /*background-repeat: repeat-x;*/
+  /*left: auto;*/
+  /*right: 0;*/
+}
+
+.carousel-control.right {
+  background-image: none;
+  /*background-repeat: repeat-x;*/
+  /*left: auto;*/
+  /*right: 0;*/
+}
+
+
+.carousel.carousel-fade .item {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:1;
+}
+
+.carousel.carousel-fade .active.item {
+  opacity:1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+  left: 0;
+  z-index: 1;
+}
+
+.carousel.carousel-fade .carousel-control {
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  INTRO  ===========================================================   */
+
+#intro   {
+  background-color: rgba(255, 255, 255, 1);
+  max-width: 100%;
+  margin: 20px auto 20px auto;
+}
+
+#intro p  {
+  font-size: 1.5em;
+  color: rgba(78, 51, 38, 0.7);
+  padding: 20px 30px 25px 30px;
+  margin: 0px auto 0px auto;
+}
+
+#intro strong  {
+  font-size: 1.0em;
+  color: rgba(78, 51, 38, 1);
+}
+
+#intro em  {
+  font-size: 1.0em;
+  color: rgba(77, 77, 77, 1);
+}
+
+
+
+
+
+
+
+
+
+
+/*  HOMEBOX  ===========================================================   */
+
+.homeBox    {
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 0px auto 50px auto;
+  max-width: 95%;
+}
+
+.homeBox  ul  {
+  list-style: none outside none;
+  padding: 5px 0 0 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+.img-responsive {
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.image-700  {
+  height: auto;
+  max-width: 95%;
+}
+
+
+
+.address   {
+  color: rgba(0, 0, 0, .5);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.8em;
+}
+
+.city   {
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.2em;
+}
+
+.price   {
+  color: rgba(0, 0, 0, .5);
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.details      {
+  font-size: 1.2em;
+  text-align: left;
+  margin: 0 auto 40px auto;
+  max-width: 90%;
+}
+
+.details  ul    {
+  padding-left: 0px;
+  list-style-type: square;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.caption  {
+  color: rgba(128, 128, 128, 1);
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0.2em auto 3.0em auto;
+}
+
+
+
+.headingBox   {
+  background-image: url("../images/marble-white.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 95%;
+  margin: 80px auto 10px auto;
+}
+
+.headingBox h2  {
+  font-size: 1.6em;
+  color: rgba(255, 255, 255, 1);
+  padding: 5px 30px 10px 30px;
+  margin: 60px auto 60px auto;
+  text-shadow: 2px 2px 0 rgba(200, 200, 200, 1), 4px 4px 0 rgba(78, 51, 38, .5);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  TESTIMONIALS  ===========================================================   */
+
+#testimonials   {
+  background-color: rgba(255, 255, 255, 1);
+  max-width: 100%;
+  padding: 0px 0px 40px 0px;
+  margin: 0px auto 0px auto;
+}
+
+.testimonial     {
+  background-color: rgba(78, 51, 38, 0.3);
+  padding: 20px 0px 0px 0px;
+  margin: 0px 30px 40px 30px;
+}
+
+.testimonial p    {
+  font-size: 1.4em;
+  line-height: 1.25;
+  color: rgba(77, 77, 77, 1);
+  text-align: left;
+  padding: 0px 20px 20px 20px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ABOUT  ===========================================================   */
+
+#about ul  {
+  list-style: square inside none;
+  font-size: 1.4em;
+  line-height: 1.1;
+  text-align: left;
+  padding: 0px 10px 60px 20px;
+  margin: 0px auto 0px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  CONTACT  ===========================================================   */
+
+#contact p  {
+  font-size: 1.4em;
+  line-height: 1.7;
+  margin: 0 auto 0 auto;
+}
+
+#contact a:link  {
+  color: rgba(78, 51, 38, 0.5);
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+#contact a:hover  {
+  color: rgba(78, 51, 38, 0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER  ===========================================================   */
+
+footer  {
+  background-color: rgba(171, 152, 141, 1);
+  padding: 60px 0px 60px 0px;
+  line-height: 1.7;
+}
+
+footer h1  {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 3.0em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 1);
+  padding: 40px 0px 40px 0px;
+  margin: 0px auto 0px auto;
+}
+
+footer h2  {
+  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: rgba(40, 27, 13, 1);
+  padding: 40px 30px 20px 30px;
+  margin: 0px auto 0px auto;
+}
+
+footer p  {
+  color: rgba(40, 27, 13, 0.7);
+  font-size: 1.2em;
+  margin: 0px auto 0px auto;
+}
+
+footer a:link  {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.7em;
+  text-decoration: none;
+  padding: 1px 10px 3px 10px;
+}
+
+footer a:hover  {
+  color: rgba(255, 255, 255, .7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  RESPONSIVE CSS  ===========================================================   */
+
+
+/* ~~~~~~~~~~~~~~~ max-width: 320x >  ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 320px) {
+
+	#intro p  {
+		font-size: 1.35em;
+	}
+
+	.caption 	{
+		margin: 0 auto 20px auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~ min-width: 700px +  ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (min-width: 700px) {
+
+  .container  {
+    width: 700px;
+    padding: 0 0 0 0;
+  }
+
+  /* disabled 190526 */
+  nav {
+    // font-size: 1.2em;
+    // width: 50%;
+    // padding: .8em 0 1.3em 0;
+  }
+
+  .navbar-header img  {
+    height: 50px;
+    /*max-width: 60%;*/
+    padding: 7px 0px 6px 0px;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    /*margin-right: 0px;*/
+  }
+
+
+  #intro p  {
+    font-size: 1.8em;
+  }
+
+
+	.homeBox    {
+  	font-size: 1.2em;
+    margin: 0px auto 80px auto;
+	}
+
+	.details	 		{
+		font-size: 1.2em;
+		max-width: 500px;
+	}
+
+  .headingBox   {
+    width: 700px;
+    margin: 100px auto 60px auto;
+  }
+
+  .testimonial   {
+    max-width: 700px;
+    margin: 0px auto 40px auto;
+  }
+
+  #about ul  {
+    max-width: 600px;
+  }
+
+
+
+  .carousel {
+    max-width: 700px;
+    margin: 50px auto 0px auto;
+  }
+
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+}
