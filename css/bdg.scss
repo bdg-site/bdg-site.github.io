@@ -65,20 +65,20 @@ body    {
 
 nav {
   text-align: center;
-  // width: 80%;
   margin: 0 auto;
   overflow: hidden;
-  // padding: .6em 0 1.3em 0;
+  // padding: .6em 0 1.3em 0;  //190526
+  // width: 80%;               //190526
 }
 
 nav a:link {
   color: rgba(0, 0, 0, .4);
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
+  text-decoration: none;
   // width: 33.333%;    //190526
   // font-size: 1.1em;  //190526
   // float: left;       //190526
-  text-decoration: none;
  }
 
 nav a:hover {
@@ -192,7 +192,6 @@ nav a:visited {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  /*height: 500px;*/
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -248,16 +247,10 @@ nav a:visited {
 
 .carousel-control.left {
   background-image: none;
-  /*background-repeat: repeat-x;*/
-  /*left: auto;*/
-  /*right: 0;*/
 }
 
 .carousel-control.right {
   background-image: none;
-  /*background-repeat: repeat-x;*/
-  /*left: auto;*/
-  /*right: 0;*/
 }
 
 
@@ -353,8 +346,6 @@ nav a:visited {
   text-align: center;
 }
 
-
-
 .img-responsive {
   height: auto;
   max-width: 100%;
@@ -365,8 +356,6 @@ nav a:visited {
   height: auto;
   max-width: 95%;
 }
-
-
 
 .address   {
   color: rgba(0, 0, 0, .5);
@@ -406,8 +395,6 @@ nav a:visited {
   font-weight: 300;
   margin: 0.2em auto 3.0em auto;
 }
-
-
 
 .headingBox   {
   background-image: url("../images/marble-white.jpg");
@@ -584,10 +571,6 @@ footer a:hover  {
 
 
 
-
-
-
-
 /*  RESPONSIVE CSS  ===========================================================   */
 
 
@@ -622,21 +605,18 @@ footer a:hover  {
     padding: 0 0 0 0;
   }
 
-  /* disabled 190526 */
   nav {
-    // font-size: 1.2em;
-    // width: 50%;
-    // padding: .8em 0 1.3em 0;
+    // font-size: 1.2em;          //190526
+    // width: 50%;                //190526
+    // padding: .8em 0 1.3em 0;   //190526
   }
 
   .navbar-header img  {
     height: 50px;
-    /*max-width: 60%;*/
     padding: 7px 0px 6px 0px;
   }
 
   .navbar-nav.navbar-right:last-child {
-    /*margin-right: 0px;*/
   }
 
 
@@ -668,8 +648,6 @@ footer a:hover  {
   #about ul  {
     max-width: 600px;
   }
-
-
 
   .carousel {
     max-width: 700px;
