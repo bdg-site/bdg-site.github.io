@@ -42,7 +42,9 @@ body    {
   -webkit-text-size-adjust:100%;
 }
 
-
+.wrapper  {
+  margin-top: 60px;
+}
 
 
 
@@ -130,10 +132,6 @@ nav a:visited {
   background-color: rgba(0, 0, 0, .1);
 }
 
-.navSpacer  {
-  height: 60px;
-}
-
 
 
 
@@ -183,7 +181,7 @@ nav a:visited {
 /* Carousel base class */
 .carousel {
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: -10px;
 }
 
 .carousel-caption {
@@ -651,7 +649,7 @@ footer a:hover  {
 
   .carousel {
     max-width: 700px;
-    margin: 50px auto 0px auto;
+    margin: -10px auto 0px auto;
   }
 
   .carousel-control .glyphicon-chevron-left,
