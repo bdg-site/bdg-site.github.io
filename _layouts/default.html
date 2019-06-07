@@ -5,13 +5,12 @@
 
   <body>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="wrapper">
+      {% include header.html %}
+      {{ content }}
     </div>
+
+    {% include footer.html %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
