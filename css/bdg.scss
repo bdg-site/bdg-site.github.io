@@ -15,6 +15,10 @@ h1  {
   margin: 50px auto 0px auto;
 }
 
+h2  {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
 p     {
   color: rgba(0, 0, 0, 1);
 }
@@ -64,7 +68,7 @@ footer {
 
 .navbar-header img  {
   height: 50px;
-  padding: 7px 0px 6px 20px;
+  padding: 7px 0px 6px 60px;
 }
 
 .navbar-default {
@@ -339,7 +343,7 @@ nav a:visited {
 .homeBox    {
   font-size: 1.2em;
   background-color: rgba(255, 255, 255, 1);
-  margin: 100px auto 50px auto;
+  margin: 0px auto 100px auto;
   max-width: 95%;
 }
 
@@ -405,15 +409,15 @@ nav a:visited {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 95%;
-  margin: 80px auto 10px auto;
+  margin: 110px auto 60px auto;
 }
 
 .headingBox h2  {
   font-size: 1.6em;
+  font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  padding: 5px 30px 10px 30px;
-  margin: 60px auto 60px auto;
-  text-shadow: 2px 2px 0 rgba(200, 200, 200, 1), 4px 4px 0 rgba(78, 51, 38, .5);
+  padding: 5px 30px 7px 30px;
+  text-shadow: 1px 1px 0 rgba(200, 200, 200, 1), 2px 2px 0 rgba(78, 51, 38, .5);
   text-align: center;
   text-transform: uppercase;
 }
@@ -631,7 +635,7 @@ footer a:hover  {
 
 	.homeBox    {
   	font-size: 1.2em;
-    margin: 100px auto 50px auto;
+    margin: 0px auto 100px auto;
 	}
 
 	.details	 		{
@@ -641,7 +645,7 @@ footer a:hover  {
 
   .headingBox   {
     width: 700px;
-    margin: 100px auto 60px auto;
+    margin: 130px auto 80px auto;
   }
 
   .testimonial   {
@@ -655,7 +659,7 @@ footer a:hover  {
 
   .carousel {
     max-width: 700px;
-    margin: -10px auto 0px auto;
+    margin: 50px auto 0px auto;
   }
 
   .carousel-control .glyphicon-chevron-left,
