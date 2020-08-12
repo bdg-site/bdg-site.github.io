@@ -3,7 +3,8 @@
 ---
 @charset "utf-8";
 
-// Import partials from `css_dir`
-@import "bootstrap.min";
+// Import partials from `_sass_dir`
+@import "bootstrap/bootstrap";
+@import "navbar";
 @import "bdg";
-;
+

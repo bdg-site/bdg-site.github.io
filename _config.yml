@@ -13,5 +13,5 @@ github_username:  blocknroll
 # Build settings
 permalink: :title/
 sass:
-  sass_dir: css
+  sass_dir: _sass
 markdown: kramdown
