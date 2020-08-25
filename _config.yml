@@ -12,6 +12,16 @@ github_username:  blocknroll
 
 # Build settings
 permalink: :title/
-sass:
-  sass_dir: _sass
+
 markdown: kramdown
+
+keep_files: ['webpack']
+
+exclude:
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - webpack.config.js

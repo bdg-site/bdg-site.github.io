@@ -6,6 +6,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: './js/index.js',
 
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, '_site/webpack')
+  },
+
   devtool: 'source-map',
 
   module: {
@@ -15,10 +20,6 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader"
       },
-      // {
-      //   test: /\.scss$/,
-      //   use: [ 'style-loader', 'css-loader', 'sass-loader' ]
-      // },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
