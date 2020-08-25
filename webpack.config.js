@@ -1,9 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './js/index.js',
+
+  devtool: 'source-map',
 
   module: {
     rules: [
@@ -12,9 +15,27 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader"
       },
+      // {
+      //   test: /\.scss$/,
+      //   use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+      // },
       {
-        test: /\.scss$/,
-        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -37,7 +58,8 @@ module.exports = {
       cleanStaleWebpackAssets: true,
       // Do not allow removal of current webpack assets: default: true
       protectWebpackAssets: false
-    })
+    }),
+    new MiniCssExtractPlugin({filename: '[name].css'})
   ]
 
 };
