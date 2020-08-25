@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, '_site/webpack')
+    path: path.resolve(__dirname, 'css')
   },
 
   mode: 'production',
