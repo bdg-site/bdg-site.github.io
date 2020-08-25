@@ -11,6 +11,8 @@ module.exports = {
     path: path.resolve(__dirname, '_site/webpack')
   },
 
+  mode: 'production',
+
   devtool: 'source-map',
 
   module: {
