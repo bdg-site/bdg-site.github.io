@@ -1,3 +1,4 @@
+@import "_colors";
 
 /*  FONTS   ===========================================================   */
 
@@ -10,9 +11,8 @@ h1  {
   font-size: 2.0em;
   font-weight: 300;
   letter-spacing: 0.0em;
-  color: rgba(78, 51, 38, 0.5);
-  padding: 30px 40px 30px 40px;
-  margin: 50px auto 0px auto;
+  color: $tan-medium;
+  margin: 20px auto 40px auto;
 }
 
 h2  {
@@ -20,7 +20,7 @@ h2  {
 }
 
 p     {
-  color: rgba(0, 0, 0, 1);
+  color: $brown;
 }
 
 
@@ -39,7 +39,7 @@ html {
 }
 
 body  {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white;
   margin: 0px 0px 224px 0px;
   line-height: 1.2;
   text-align: center;
@@ -71,19 +71,19 @@ footer {
 }
 
 .button a:link  {
-  background-color: rgba(0, 0, 0, .2);
-  color: rgba(255, 255, 255, 1);
+  background-color: $black-20;
+  color: $white;
   font-size: 1.1em;
   text-decoration: none;
   padding: 1px 10px 3px 10px;
 }
 
 .button a:hover {
-  background-color: rgba(171, 152, 141, 1);
+  background-color: $tan-lighter;
 }
 
 .button a:visited {
-  color: rgba(255, 255, 255, 1);
+  color: $white;
 }
 
 
@@ -96,25 +96,25 @@ footer {
 /*  INTRO  ===========================================================   */
 
 #intro   {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white;
   max-width: 100%;
   margin: 40px auto 0px auto;
 }
 
 #intro p  {
+  color: $tan-darker;
   font-size: 1.5em;
-  color: rgba(78, 51, 38, 0.7);
   margin: 0px auto 0px auto;
 }
 
 #intro strong  {
   font-size: 1.0em;
-  color: rgba(78, 51, 38, 1);
+  color: $brown;
 }
 
 #intro em  {
   font-size: 1.0em;
-  color: rgba(77, 77, 77, 1);
+  color: $tan-darker;
 }
 
 
@@ -127,7 +127,7 @@ footer {
 
 .homeBox    {
   font-size: 1.2em;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white;
   margin: 0px auto 60px auto;
   max-width: 95%;
 }
@@ -151,19 +151,19 @@ footer {
 }
 
 .address   {
-  color: rgba(0, 0, 0, .5);
+  color: $black-40;
   font-weight: 400;
   font-style: italic;
   font-size: 1.8em;
 }
 
 .city   {
-  color: rgba(0, 0, 0, 1);
+  color: $black-80;
   font-size: 1.2em;
 }
 
 .price   {
-  color: rgba(0, 0, 0, .5);
+  color: $black-30;
   font-weight: 300;
   font-size: 1.2em;
 }
@@ -183,7 +183,7 @@ footer {
 }
 
 .caption  {
-  color: rgba(128, 128, 128, 1);
+  color: $black-30;
   font-size: 1.2em;
   font-weight: 300;
   margin: 0.2em auto 3.0em auto;
@@ -200,9 +200,10 @@ footer {
 .headingBox h2  {
   font-size: 1.6em;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: $white;
   padding: 5px 30px 7px 30px;
-  text-shadow: 1px 1px 0 rgba(200, 200, 200, 1), 2px 2px 0 rgba(78, 51, 38, .5);
+  text-shadow: 1px 1px 0 $black-20,
+               2px 2px 0 $tan-medium;
   text-align: center;
   text-transform: uppercase;
 }
@@ -225,14 +226,14 @@ footer {
 /*  TESTIMONIALS  ===========================================================   */
 
 #testimonials   {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $white;
   max-width: 100%;
   padding: 0px 0px 40px 0px;
   margin: 0px auto 0px auto;
 }
 
 .testimonial     {
-  background-color: rgba(78, 51, 38, 0.3);
+  background-color: $tan-lighter;
   padding: 20px 0px 0px 0px;
   margin: 0px 30px 40px 30px;
 }
@@ -240,7 +241,7 @@ footer {
 .testimonial p    {
   font-size: 1.4em;
   line-height: 1.25;
-  color: rgba(77, 77, 77, 1);
+  color: $brown;
   text-align: left;
   padding: 0px 20px 20px 20px;
   margin: 0px 0px 0px 0px;
@@ -260,6 +261,7 @@ footer {
 /*  ABOUT  ===========================================================   */
 
 #about ul  {
+  color: $brown;
   list-style: square inside none;
   font-size: 1.4em;
   line-height: 1.1;
@@ -288,13 +290,13 @@ footer {
 }
 
 #contact a:link  {
-  color: rgba(78, 51, 38, 0.5);
+  color: $tan-medium;
   font-size: 2.5em;
   text-decoration: none;
 }
 
 #contact a:hover  {
-  color: rgba(78, 51, 38, 0.9);
+  color: $tan-darker;
 }
 
 
@@ -310,7 +312,7 @@ footer {
 /*  FOOTER  ===========================================================   */
 
 footer  {
-  background-color: rgba(171, 152, 141, 1);
+  background-color: $tan-light;
   padding: 60px 0px 60px 0px;
   line-height: 1.7;
 }
@@ -320,7 +322,7 @@ footer h1  {
   font-size: 3.0em;
   font-weight: 300;
   letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 1);
+  color: $white;
   padding: 40px 0px 40px 0px;
   margin: 0px auto 0px auto;
 }
@@ -335,20 +337,20 @@ footer h2  {
 }
 
 footer p  {
-  color: rgba(40, 27, 13, 0.7);
+  color: $tan-darkest;
   font-size: 1.2em;
   margin: 0px auto 0px auto;
 }
 
 footer a:link  {
-  color: rgba(255, 255, 255, 1);
+  color: $white;
   font-size: 1.7em;
   text-decoration: none;
   padding: 1px 10px 3px 10px;
 }
 
 footer a:hover  {
-  color: rgba(255, 255, 255, .7);
+  color: $tan-lightest;
 }
 
 

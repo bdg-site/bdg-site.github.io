@@ -1,10 +1,12 @@
+@import "_colors";
+
 .navbar {
   padding: 0;
 }
 
 .bg-lightbrown {
-  background-color: rgba(171, 152, 141, 1);
-  border-color: rgba(171, 152, 141, 1);
+  background-color: $tan-light;
+  border-color: $tan-light;
 }
 
 .navbar-brand {
@@ -13,20 +15,25 @@
   img {
     height: 50px;
     padding: 7px 0px 7px 55px;
-    
+
   }
 }
 
 .navbar-light
 .navbar-toggler {
-  border-color: rgba(0, 0, 0, 0.3);
-  outline: rgba(0, 0, 0, 0.3);
+  border-color: $tan-darker;
+  outline: $tan-darker;
   margin: 0 15px 0 0;
 }
 
+// .navbar-light .navbar-toggler {
+//   color: rgba(0,0,0,0.5);
+//   border-color: rgba(0,0,0,0.1);
+// }
+
 .navbar-toggler:focus {
-  border-color: rgba(0, 0, 0, 0.3);
-  outline: rgba(0, 0, 0, 0.3);
+  border-color: $tan-darker;
+  outline: $tan-darker;
 }
 
 .navbar-nav {
@@ -34,15 +41,15 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 1);
+  color: $white;
 }
 
-.navbar-light .navbar-nav .show > .nav-link, 
-.navbar-light .navbar-nav .active > .nav-link, 
-.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: $tan-lightest;
 }
 
 nav a:link {
@@ -72,24 +79,24 @@ nav a:visited {
 
 @media (min-width: 750px) {
 
-  .navbar-expand-md 
+  .navbar-expand-md
   .navbar-toggler {
     display: none;
   }
 
-  .navbar-expand-md 
+  .navbar-expand-md
   .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
 
-  .navbar-expand-md 
+  .navbar-expand-md
   .navbar-nav {
     flex-direction: row;
   }
 
-  .navbar-expand-md 
-  .navbar-nav 
+  .navbar-expand-md
+  .navbar-nav
   .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -101,7 +108,7 @@ nav a:visited {
 
   .navbar-brand {
     margin: 0 0 0 -2px;
-  
+
     img {
       padding: 7px 0px 7px 0px;
     }
@@ -113,42 +120,42 @@ nav a:visited {
 
 // CONTAINER //////////////////////////////////////////////
 
-.container, 
-.container-fluid, 
-.container-sm, 
-.container-md, 
-.container-lg, 
-.container-xl { 
-  width: 100%; 
-  padding-right: 15px; 
-  padding-left: 15px; 
-  margin-right: auto; 
-  margin-left: auto; 
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (min-width: 576px) { 
-  .container, 
-  .container-sm { 
-    max-width: 540px; 
-  } 
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
 }
 
-@media (min-width: 700px) { 
-  .container, 
-  .container-sm, 
-  .container-md { 
+@media (min-width: 700px) {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 700px;
     margin: 0 auto;
     padding: 0;
-  } 
+  }
 }
 
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, 
-  .navbar-expand-md > .container-fluid, 
-  .navbar-expand-md > .container-sm, 
-  .navbar-expand-md > .container-md, 
-  .navbar-expand-md > .container-lg, 
+  .navbar-expand-md > .container,
+  .navbar-expand-md > .container-fluid,
+  .navbar-expand-md > .container-sm,
+  .navbar-expand-md > .container-md,
+  .navbar-expand-md > .container-lg,
   .navbar-expand-md > .container-xl {
     margin: 0 auto;
     padding-right: 0;
@@ -156,21 +163,21 @@ nav a:visited {
   }
 }
 
-@media (min-width: 992px) { 
-  .container, 
-  .container-sm, 
-  .container-md, 
-  .container-lg { 
-    max-width: 700px; 
-  } 
+@media (min-width: 992px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 700px;
+  }
 }
 
-@media (min-width: 1200px) { 
-  .container, 
-  .container-sm, 
-  .container-md, 
-  .container-lg, 
-  .container-xl { 
-    max-width: 700px; 
-  } 
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 700px;
+  }
 }
