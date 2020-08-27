@@ -1,0 +1,331 @@
+@import "_colors";
+
+// BODY /////////////////////////////////////////
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: $white;
+  line-height: 1.2;
+  margin: 0px 0px 224px 0px;
+  text-align: center;
+  -webkit-text-size-adjust:100%;
+}
+
+.wrapper {
+  padding: 80px 0px 40px 0px;
+}
+
+
+
+// BUTTONS //////////////////////////////////////
+
+.button {
+  margin: 10px 0 10px 0;
+
+  a:link {
+    background-color: $black-20;
+    color: $white;
+    font-size: 1.2em;
+    padding: 1px 10px 3px 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: $tan-lighter;
+  }
+
+  a:visited {
+    color: $white;
+  }
+}
+
+
+
+// INTRO ////////////////////////////////////////
+
+#intro {
+  margin: 40px auto 0px auto;
+  max-width: 100%;
+
+  p {
+    color: $tan-darker;
+    font-size: 1.5em;
+    margin: 0px auto 0px auto;
+  }
+
+  strong {
+    color: $brown;
+  }
+
+  em {
+    color: $tan-darker;
+  }
+}
+
+
+
+// HOMEBOX //////////////////////////////////////
+
+.homeBox {
+  background-color: $white;
+  margin: 0px auto 60px auto;
+  max-width: 95%;
+
+  ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 5px 0 0 0;
+  }
+}
+
+.img-responsive {
+  height: auto;
+  margin: 0 auto 0 auto;
+  max-width: 100%;
+}
+
+.image-700 {
+  height: auto;
+  max-width: 95%;
+}
+
+.address {
+  color: $black-40;
+  font-size: 2.2em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.city {
+  color: $black-80;
+}
+
+.price {
+  color: $black-30;
+}
+
+.details {
+  margin: 0 auto 40px auto;
+  max-width: 90%;
+  text-align: left;
+
+  ul {
+    list-style-position: inside;
+    list-style-type: square;
+    padding-left: 0px;
+    text-align: left;
+  }
+}
+
+.caption {
+  color: $black-30;
+  margin: 0.2em auto 3.0em auto;
+}
+
+.headingBox {
+  background-image: url("../images/marble-white.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px auto 40px auto;
+  max-width: 95%;
+}
+
+.video {
+  margin: 0em auto 3.0em auto;
+  max-width: 95%;
+}
+
+
+
+// TESTIMONIALS /////////////////////////////////
+
+#testimonials {
+  background-color: $white;
+  margin: 0px auto 0px auto;
+  max-width: 100%;
+  padding: 0px 0px 40px 0px;
+}
+
+.testimonial {
+  background-color: $tan-lighter;
+  margin: 0px 30px 40px 30px;
+  padding: 20px 0px 0px 0px;
+
+  p {
+    color: $black-80;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 20px 20px 20px;
+    text-align: left;
+  }
+}
+
+
+
+// ABOUT ////////////////////////////////////////
+
+#about ul {
+  margin: 0px auto 0px auto;
+  text-align: left;
+}
+
+
+
+// CONTACT //////////////////////////////////////
+
+#contact {
+  p {
+    line-height: 1.7;
+    margin: 0 auto 0 auto;
+  }
+
+  a:link {
+    color: $tan-medium;
+    font-size: 2.3em;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $tan-darker;
+  }
+}
+
+
+
+// FOOTER ///////////////////////////////////////
+
+footer {
+  background-color: $tan-light;
+  bottom: 0;
+  height: 224px;
+  padding: 60px 0px 60px 0px;
+  position: absolute;
+  width: 100%;
+
+  p {
+    color: $tan-darkest;
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin: 0px auto 0px auto;
+  }
+
+  a:link {
+    color: $white;
+    font-size: 1.7em;
+    padding: 1px 10px 3px 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $tan-lightest;
+  }
+}
+
+
+
+// RESPONSIVE CSS ///////////////////////////////
+
+@media (min-width: 700px) {
+
+  #intro p {
+    font-size: 1.8em;
+  }
+
+	.homeBox {
+  	font-size: 1.2em;
+    margin: 0px auto 60px auto;
+	}
+
+	.details {
+		font-size: 1.2em;
+		max-width: 500px;
+	}
+
+  .headingBox {
+    margin: 20px auto 40px auto;
+    width: 700px;
+  }
+
+  .testimonial {
+    margin: 0px auto 40px auto;
+    max-width: 700px;
+  }
+
+  #about ul {
+    max-width: 600px;
+  }
+
+  .carousel {
+    margin: 0px auto 0px auto;
+    max-width: 700px;
+  }
+}
+
+
+
+// CONTAINER //////////////////////////////////////////////
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 700px) {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-expand-md > .container,
+  .navbar-expand-md > .container-fluid,
+  .navbar-expand-md > .container-sm,
+  .navbar-expand-md > .container-md,
+  .navbar-expand-md > .container-lg,
+  .navbar-expand-md > .container-xl {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 700px;
+  }
+}
