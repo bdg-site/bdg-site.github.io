@@ -28,6 +28,12 @@ p {
   color: $brown;
   font-family: $font-condensed;
   font-size: 1.4em;
+  font-weight: 300;
+}
+
+strong {
+  color: $brown;
+  font-weight: 700;
 }
 
 ul  {
