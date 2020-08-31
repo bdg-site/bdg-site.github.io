@@ -1,0 +1,94 @@
+@import "_colors";
+
+.navbar {
+  padding: 0;
+}
+
+.bg-lightbrown {
+  background-color: $tan-light;
+  border-color: $tan-light;
+}
+
+.navbar-brand {
+  margin: 0 auto;
+
+  img {
+    height: 50px;
+    padding: 7px 0px 7px 55px;
+
+  }
+}
+
+.navbar-light
+.navbar-toggler {
+  border-color: $tan-darker;
+  outline: $tan-darker;
+  margin: 0 15px 0 0;
+}
+
+.navbar-toggler:focus {
+  border-color: $tan-darker;
+  outline: $tan-darker;
+}
+
+.navbar-nav {
+  margin-bottom: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $white;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: $tan-lightest;
+}
+
+@media (min-width: 730px) {
+
+  .navbar-light
+  .navbar-toggler {
+    margin: 0;
+  }
+}
+
+@media (min-width: 750px) {
+
+  .navbar-expand-md
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-md
+  .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-md
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-md
+  .navbar-nav
+  .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .navbar-nav {
+    margin: 0 -8px 0 0;
+  }
+
+  .navbar-brand {
+    margin: 0 0 0 -2px;
+
+    img {
+      padding: 7px 0px 7px 0px;
+    }
+  }
+}
