@@ -47,14 +47,14 @@ body {
 
 // INTRO ////////////////////////////////////////
 
-#intro {
+.intro {
   margin: 40px auto 0px auto;
   max-width: 100%;
 
   p {
     color: $tan-darker;
     font-size: 1.5em;
-    margin: 0px auto 0px auto;
+    margin: 0px 20px;
   }
 }
 
@@ -135,13 +135,6 @@ body {
 
 // TESTIMONIALS /////////////////////////////////
 
-#testimonials {
-  background-color: $white;
-  margin: 0px auto 0px auto;
-  max-width: 100%;
-  padding: 0px 0px 40px 0px;
-}
-
 .testimonial {
   background-color: $tan-lighter;
   margin: 0px 30px 40px 30px;
@@ -159,16 +152,24 @@ body {
 
 // ABOUT ////////////////////////////////////////
 
-#about ul {
-  margin: 0px auto 0px auto;
-  text-align: left;
+.about {
+
+  ul {
+    margin: 0px auto 0px auto;
+    padding: 0 30px 0 46px;
+    text-align: left;
+  }
+
+  li {
+    margin: 0 auto 20px;
+  }
 }
 
 
 
 // CONTACT //////////////////////////////////////
 
-#contact {
+.contact {
   p {
     line-height: 1.7;
     margin: 0 auto 0 auto;
@@ -222,10 +223,6 @@ footer {
 
 @media (min-width: 700px) {
 
-  #intro p {
-    font-size: 1.8em;
-  }
-
 	.homeBox {
   	font-size: 1.2em;
     margin: 0px auto 60px auto;
@@ -246,8 +243,8 @@ footer {
     max-width: 700px;
   }
 
-  #about ul {
-    max-width: 600px;
+  .about ul {
+    max-width: 700px;
   }
 
   .carousel {
